@@ -1,0 +1,66 @@
+#tournamentCreateModal .modal-container {
+    max-width: 1320px;
+    width: 90%;
+}
+
+#tournamentCreateModal .form-row {
+    width: 100%;
+    max-width: 600px;
+}
+#tournamentCreateModal .form-fields {
+    display: flex;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+}
+#tournamentCreateModal .form-input {
+    max-width: 1230px;
+}
+
+#tournamentCreateModal .form-label {
+    min-width: 150px;
+}
+
+/* Для textarea */
+#tournamentCreateModal .form-input[type="text"],
+#tournamentCreateModal .form-input[type="number"],
+#tournamentCreateModal .form-input[type="datetime-local"] {
+    height: 69px;
+}
+
+
+#tournamentCreateModal option {
+    background-color: var(--violet);
+    font-size: 20px;
+}
+
+#tournamentCreateModal ::placeholder {
+    color: gainsboro;
+}
+
+.participant-error {
+    bottom: 10px !important;
+    left: 10px;
+}
+
+#tournamentCreateModal .modal-footer {
+    margin-bottom: 40px;
+    margin-right: 48px;
+}
+
+#tournamentCreateModal .modal-description {
+    margin-left: 320px;
+}
+
+
+#tournamentCreateModal textarea.form-input {
+    height: auto;
+    min-height: 100px;
+    padding-top: 16px;
+}
+
+.textrules {
+    flex-direction: column; 
+    align-items: flex-start; 
+    height: auto; 
+    max-width: 1230px !important; 
+}

@@ -1,0 +1,725 @@
+/* Шапка */
+
+header {
+	height: 82px;
+	border-bottom: 1px solid rgba(255, 56, 68, 0.2);
+	background-image: var(--surface-fade-gradient), var(--surface-dark-gradient);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.content {
+	height: 100%;
+	display: grid;
+}
+
+.content-header {
+	height: 100%;
+	display: flex;
+}
+
+nav {
+	display: flex;
+	padding:  0px 0px 0px 250px;
+}
+
+.profile {
+	font-family: 'Gilroy-ExtraBold';
+	margin: 0px 250px 0px 0px;
+	margin-left: auto;
+	align-self: center;
+	font-size: 18px;
+	border-radius: 5px;
+	width: 99px;
+	height: 43px;
+	font-weight: 600;
+	background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+	color: var(--white);
+}
+
+.profile:hover {
+	background: linear-gradient(135deg, rgba(153, 34, 41, 1), rgba(153, 34, 41, 1));
+}
+
+
+.link-home {
+	padding-right: 30px;
+}
+
+/* Общие */
+
+
+/* self-hosted fonts */
+@font-face {
+	font-family: 'Manrope Regular';
+	src: url('../fonts/manrope_regular.eot');
+	src: url('../fonts/manrope_regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/manrope_regular.woff2') format('woff2'), 
+		url('../fonts/manrope_regular.woff') format('woff'), 
+		url('../fonts/manrope_regular.ttf') format('truetype'),
+		url('../fonts/manrope_regular.svg#manrope_regular') format('svg');
+}
+
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	src: url('../fonts/gilroy-extrabold.eot');
+	src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/gilroy-extrabold.woff2') format('woff2'),
+		url('../fonts/gilroy-extrabold.woff') format('woff'),
+		url('../fonts/gilroy-extrabold.ttf') format('truetype'),
+		url('../fonts/gilroy-extrabold.svg#gilroy-extrabold') format('svg');
+}
+
+
+@font-face {
+	font-family: 'Manrope Light';
+	src: url('../fonts/manrope_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/manrope_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/manrope_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/manrope_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/manrope_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/manrope_light.svg#manrope_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('../fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+/* behaviour */
+:root {
+	scroll-behavior: smooth;
+}
+
+/* variables */
+:root {
+	/* base palette */
+	--white: rgb(255 255 255);
+	--dark: rgb(10 9 17);
+	--green: rgb(38 85 53);
+	--lavender: rgb(175 205 239);
+	--neutral: rgb(255 255 255 / 0.5);
+	--violet: rgb(40, 34, 63);
+	--violet2: rgb(55, 47, 88);
+	/* brand colors */
+	--brand-primary: rgb(255 56 68);
+	--brand-primary-dark: rgb(159 21 29);
+	--brand-primary-darker: rgb(153 34 41);
+
+	/* gradients */
+	--surface-dark-gradient: linear-gradient(
+		to right,
+		rgb(30 30 53 / 0.2) -0.11%,
+		rgb(89 89 155 / 0.2) 98.88%
+	);
+	--surface-fade-gradient: linear-gradient(
+		to bottom,
+		rgb(24 23 42) 84.85%,
+		var(--brand-primary) 310.33%
+	);
+
+	/* breakpoints */
+	--screen-2xl: 1420px;
+	--screen-3xl: 1920px;
+
+	/* fonts */
+	--font-base: 'Manrope Regular', sans-serif;
+	--font-heading: 'Gilroy-ExtraBold', sans-serif;
+
+	/* transitions */
+	--transition: 0.3s ease-out;
+
+	/* border-radius */
+	--radius-s: 3px;
+	--radius-m: 5px;
+	--radius-l: 10px;
+}
+
+.suffix {
+	color: var(--brand-primary);
+	font-weight: 600;
+}
+
+.text-heading-l {
+    margin: 0px 0px 34px 0px;
+	font-family: var(--font-heading);
+	font-size: 2.25rem;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.text-heading-s {
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+}
+
+/* css reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	font-weight: normal;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--dark);
+	color: var(--white);
+	line-height: 1.5;
+	/* is there a better way of preventing x-scroll because of the decoration? */
+	overflow-x: clip;
+}
+
+button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style-type: none;
+}
+
+menu {
+	padding: 0;
+}
+
+iframe {
+	border: none;
+}
+
+
+/* Для лого */
+
+.site-brand {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.domain {
+	font-family: var(--font-heading);
+	font-size: 21px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+
+/* Кнопки */
+
+@property --a {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: rgb(255 56 68);
+}
+
+@property --b {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: rgb(153 34 41);
+}
+
+.btn {
+	display: inline-flex;
+	padding: 10px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	vertical-align: middle;
+
+	--a: var(--brand-primary);
+	--b: var(--brand-primary-darker);
+	background-image: linear-gradient(99deg, var(--a) 1.64%, var(--b));
+	transition:
+		--a 0.3s ease-out,
+		--b 0.3s ease-out;
+
+	border-radius: 5px;
+	color: var(--white);
+	text-decoration: none;
+
+	&:hover {
+		--a: var(--brand-primary-dark);
+		--b: var(--brand-primary-dark);
+	}
+}
+
+.tonal {
+	font-family: 'Gilroy-ExtraBold';
+	
+	width: 372px;
+    height: 46px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+	border: 1px solid transparent;
+	background-image:
+		linear-gradient(var(--dark), var(--dark)),
+		linear-gradient(
+			to right,
+			rgb(from var(--dark) r g b / 0.3),
+			rgb(from var(--brand-primary) r g b / 0.3)
+		),
+		linear-gradient(var(--dark), var(--dark));
+
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+}
+
+
+.tonal2 {
+	font-family: 'Gilroy-ExtraBold';
+	color: white;
+	border-radius: 5px;
+	padding: 11px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	border: 1px solid transparent;
+	background-image:
+		linear-gradient(#28223F, #28223F),
+		linear-gradient(
+			to right,
+			rgb(from var(--dark) r g b / 0.3),
+			rgb(from var(--brand-primary) r g b / 0.3)
+		),
+		linear-gradient(#28223F, #28223F);
+
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+}
+
+
+
+/* подсветка */
+
+.link {
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+	padding: 0 20px;
+	align-content: center;
+	transition: color var(--transition);
+	position: relative;
+	overflow-y: clip;
+
+	&:hover {
+		color: #684b4b;
+
+		.link-content::before {
+			filter: blur(30px);
+		}
+	}
+}
+
+.glow {
+	position: absolute;
+	height: 7.7px;
+	width: 268px;
+	filter: blur(3px);
+	bottom: -5.85px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(
+		to right,
+		rgb(from var(--brand-primary) r g b / 0),
+		var(--brand-primary),
+		rgba(from var(--brand-primary) r g b / 0)
+	);
+	opacity: 0;
+	transition: opacity var(--transition);
+	pointer-events: none;
+}
+
+.link-active {
+	.link-content {
+		color: var(--brand-primary);
+	}
+
+	.glow {
+		opacity: 1;
+	}
+}
+
+.link-content {
+	position: relative;
+	isolation: isolate;
+	font-size: 18px;
+	font-weight: 800;
+
+	&::before {
+		position: absolute;
+		color: var(--brand-primary);
+		content: attr(data-text) / '';
+		filter: blur(0px);
+		transition: filter var(--transition);
+		z-index: -1;
+	}
+}
+
+.decoration {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.tournaments {
+	display: grid;
+    padding: 0px 250px;
+	grid-template-columns: 412px 1fr;
+	gap: 80px 20px;
+	position: relative;
+}
+
+.tournaments-menu {
+	display: grid;
+	grid-template-rows: 62px 62px 1fr;
+	gap: 20px;
+	position: sticky;
+	top: 100px;
+}
+
+.tournaments-list {
+	margin-bottom: 20px;
+	display: grid;
+	gap: 20px;
+}
+
+.tournaments-surface {
+	padding: 40px;
+	position: relative;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+	overflow: hidden;
+	isolation: isolate;
+    }
+
+	.tournaments-surface::before {
+		content: '';
+		position: absolute;
+		width: 336px;
+		height: 303px;
+		top: -134px;
+		right: -216px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+	.tournaments-surface:after {
+		content: '';
+		position: absolute;
+		width: 268px;
+		height: 241px;
+		bottom: -135px;
+		left: -133px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+.cardtournament {
+    margin-bottom: 20px;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	height: 200px;
+	padding: 40px 40px 0px 50px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	place-content: start;
+	border-radius: var(--radius-l);
+	background-color: rgb(40, 34, 63);
+}
+
+.tournamentlogo {
+	display: block;
+	width: 120px;
+	height: 98px;
+	margin-bottom: 7px;
+	border-radius: var(--radius-m);
+}
+
+.totournament {
+    width: 111px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    text-align: center;
+    align-content: center;
+    place-self: end;
+}
+
+.details {
+	color: var(--lavender);
+}
+
+.bodytournamentcard {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	grid-template-rows: auto auto;
+	row-gap: 18px;
+	place-content: start;
+	text-align: start;
+}
+
+.entry {
+	padding: 0 20px;
+	border-right: 1px solid rgb(255 255 255 / 0.2);
+}
+
+.entry.borderless {
+		border: none;
+	}
+
+
+.close {
+	font-family: 'Gilroy-ExtraBold';
+    width: 119px;
+    height: 26px;
+    background-color: #0A0911;
+    color: white;
+    font-size: 11px;
+	margin-bottom: 2px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+}
+
+.organizator {
+	font-family: 'Gilroy-ExtraBold';
+    width: 119px;
+    height: 26px;
+    background-color: #1C1A2F;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+}
+
+.lock {
+	position: absolute;
+	top: -22px;
+	right: -7px;
+	transform: rotate(-15deg);
+	z-index: -1;
+}
+
+.privatetournament {
+    margin-bottom: 20px;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	height: 200px;
+	padding: 40px 40px 0px 50px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	place-content: start;
+	border-radius: var(--radius-l);
+    background-color: rgb(52 53 61);
+}
+
+
+.footer {
+	padding: 30px 0 40px;
+	background-image: var(--surface-fade-gradient), var(--surface-dark-gradient);
+}
+
+.brand {
+	display: grid;
+	gap: 23px;
+	place-items: start;
+}
+
+	.socials {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 17px;
+		height: 38px;
+		}
+
+		.icon {
+			width: 38px;
+			height: 38px;
+		}
+
+.links {
+	font-family: 'Manrope Regular';
+	display: grid;
+	gap: 20px;
+	place-content: start;
+}
+
+.support {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: auto auto 46px;
+}
+
+.support-heading {
+		color: var(--brand-primary);
+		font-family: 'Gilroy-ExtraBold';
+		font-size: 18px;
+	}
+
+.copyright {
+	font-family: 'Manrope Regular';
+	font-size: 18px;
+	color: var(--neutral);
+}
+
+.support-description {
+	font-family: 'Manrope Regular';
+	font-size: 18px;
+	color: var(--neutral);
+	width: 290px;
+}
+
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 256px 0px 250px;
+}
+
+.footer-btn {
+	width: 290px !important;
+	height: 46px !important;
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+}
+
+.icon-logo {
+	width: 34px;
+	height: 72px;
+}
+
+.icon-logo1 {
+	width: 28px;
+	height: 66px;
+}
+
+
+.menu-button {
+	font-family: 'Gilroy-ExtraBold';
+    width: 412px;
+    height: 62px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-radius: 5px;
+}
+
+.text-base-m {
+	font-family: 'Manrope Regular';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.text-heading-m {
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 24px;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.imagetop {
+	max-width: 100%;
+	aspect-ratio: 372 / 165;
+	object-fit: cover;
+	border-radius: var(--radius-m);
+}
+
+.cardtop {
+	position: relative;
+	padding: 20px;
+	display: grid;
+	justify-items: stretch;
+	gap: 20px;
+	border-radius: var(--radius-l);
+	background-image: var(--surface-dark-gradient);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	text-align: center;
+}
+
+.badge {
+	font-family: 'Gilroy-ExtraBold';
+	padding: 6px 12px;
+	border-radius: var(--radius-s);
+	background-image: linear-gradient(to right, var(--brand-primary), var(--brand-primary-dark));
+
+	font-family: var(--font-heading);
+	font-size: 0.7rem;
+	font-weight: 800;
+	line-height: normal;
+}
+
+
+.divider {
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgb(from var(--brand-primary) r g b / 0),
+		var(--brand-primary),
+		rgb(153 34 41 / 0)
+	);
+}
+
+.badge {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.info {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	gap: 10px;
+}
+
+.info-item {
+	height: 33px;
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: var(--radius-m);
+	background-image: var(--surface-dark-gradient);
+}
+
+.imagetop {
+	max-width: 100%;
+	aspect-ratio: 372 / 165;
+	object-fit: cover;
+	border-radius: var(--radius-m);
+}

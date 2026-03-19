@@ -1,0 +1,484 @@
+ .profile {
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            margin-left: auto;
+            align-self: center;
+            font-size: 18px;
+            border-radius: 5px;
+            width: 99px;
+            height: 43px;
+            font-weight: 600;
+            background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+            color: rgb(255 255 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile:hover {
+            background: linear-gradient(135deg, rgba(153, 34, 41, 1), rgba(153, 34, 41, 1));
+        }
+        .link-home {
+            padding-right: 30px;
+        }
+        
+        /* Общие стили */
+        :root {
+            --white: rgb(255 255 255);
+            --dark: rgb(10 9 17);
+            --green: rgb(38 85 53);
+            --lavender: rgb(175 205 239);
+            --neutral: rgb(255 255 255 / 0.5);
+            --violet: rgb(40, 34, 63);
+            --violet2: rgb(55, 47, 88);
+            --brand-primary: rgb(255 56 68);
+            --brand-primary-dark: rgb(159 21 29);
+            --brand-primary-darker: rgb(153 34 41);
+            --surface-dark-gradient: linear-gradient(to right, rgb(30 30 53 / 0.2) -0.11%, rgb(89 89 155 / 0.2) 98.88%);
+            --surface-fade-gradient: linear-gradient(to bottom, rgb(24 23 42) 84.85%, var(--brand-primary) 310.33%);
+            --radius-s: 3px;
+            --radius-m: 5px;
+            --radius-l: 10px;
+            --transition: 0.3s ease-out;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-weight: normal;
+        }
+        
+        /* Основной контейнер */
+        
+        /* Боковая панель */
+        
+        
+        /* Основной контент */
+        .main-content {
+            padding: 40px 425px 40px 425px;
+        }
+
+        .date-title {
+            margin-bottom: 20px;
+        }
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .page-title {
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 800;
+        }
+        
+        .page-subtitle {
+            color: var(--neutral);
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            color: var(--white);
+            text-decoration: none;
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-image: linear-gradient(99deg, var(--brand-primary) 1.64%, var(--brand-primary-darker));
+            transition: all var(--transition);
+        }
+        
+        .btn:hover {
+            background-image: linear-gradient(99deg, var(--brand-primary-dark), var(--brand-primary-dark));
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid rgba(255, 56, 68, 0.3);
+        }
+        
+        /* Карточки статистики */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            padding: 30px;
+            background-image: var(--surface-dark-gradient);
+            border-radius: var(--radius-l);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            right: -50px;
+            border-radius: 100%;
+            background-color: var(--brand-primary);
+            opacity: 0.1;
+            filter: blur(50px);
+        }
+        
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(255, 56, 68, 0.2), rgba(153, 34, 41, 0.2));
+            border-radius: var(--radius-m);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        
+        .stat-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--brand-primary);
+        }
+        
+        .stat-value {
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            color: var(--neutral);
+            font-size: 14px;
+        }
+        
+        .stat-change {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            margin-top: 12px;
+            padding: 4px 8px;
+            border-radius: var(--radius-s);
+        }
+        
+        .stat-change.positive {
+            background: rgba(38, 85, 53, 0.3);
+            color: rgb(38 85 53);
+        }
+        
+        .stat-change.negative {
+            background: rgba(255, 56, 68, 0.2);
+            color: var(--brand-primary);
+        }
+        
+        /* Таблицы */
+        .table-container {
+            background-image: var(--surface-dark-gradient);
+            border-radius: var(--radius-l);
+            margin-top: 50px;
+            padding: 30px;
+            width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        .table-container2 {
+            background-image: var(--surface-dark-gradient);
+            border-radius: var(--radius-l);
+            margin-top: 50px;
+            padding: 30px;
+            width: 1070px;
+            margin-bottom: 40px;
+        }
+        
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .table-title {
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            font-size: 20px;
+        }
+        
+    
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            text-align: left;
+            padding: 16px;
+            color: var(--neutral);
+            font-size: 14px;
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        
+        
+        
+        
+        /* Форма */
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-label {
+            display: block;
+            font-family: 'Gilroy-ExtraBold', sans-serif;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: var(--neutral);
+        }
+
+        .btn-tournament {
+            display: flex; 
+            gap: 12px; 
+            margin-top: 24px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--violet);
+            border-radius: var(--radius-m);
+            color: var(--white);
+            font-family: 'Manrope Regular', sans-serif;
+            font-size: 16px;
+            background-color: #28223F;
+            padding: 12px 24px;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            font-family: 'Gilroy-ExtraBold';
+            width: 493px !important;
+            height: 53px !important;
+            outline: none;
+            position: relative;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            background-image: 
+                linear-gradient(to bottom, #28223F, #28223F),
+                linear-gradient(to bottom, rgb(10 9 17), rgb(255 56 68));
+            border: 1px solid transparent;
+        }
+
+        .form-select:focus {
+            border: none;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+            
+        }
+
+        .tonall {
+            font-family: 'Gilroy-ExtraBold';
+            border: 1px solid transparent;
+            width: 160px;
+            height: 46px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            background-image:
+                linear-gradient(var(--dark), var(--dark)),
+                linear-gradient(
+                    to right,
+                    rgb(from var(--dark) r g b / 0.3),
+                    rgb(from var(--brand-primary) r g b / 0.3)
+                ),
+                linear-gradient(var(--dark), var(--dark));
+
+            background-origin: padding-box, border-box, border-box;
+            background-clip: padding-box, border-box, border-box;
+        }
+
+        .actions p {
+            font-family: 'Gilroy-ExtraBold';
+            font-size: 14px;
+            color: #ffffff;
+        }
+        
+        .form-select {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--violet);
+            border: none;
+            border-radius: var(--radius-m);
+            color: var(--white);
+            font-family: 'Manrope Regular', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .form-row2 {
+            
+        }
+
+        #tournamentCreateModal textarea.form-input {
+    height: auto;
+    min-height: 100px;
+    padding-top: 16px;
+}
+
+.textrules {
+    flex-direction: column; 
+    align-items: flex-start; 
+    height: auto; 
+    max-width: 1230px !important; 
+}
+
+#tDesc {
+    width: 1010px !important;
+    min-height: 200px;
+}
+
+
+
+
+
+
+/* Заявки на турниры */
+.applications-table th,
+.support-table th {
+    text-align: left;
+    padding: 16px;
+    color: var(--neutral);
+    font-size: 14px;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.applications-table td,
+.support-table td {
+    padding: 20px 16px;
+    color: var(--white);
+    font-family: 'Manrope Regular', sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+}
+
+.applications-table tbody tr:hover,
+.support-table tbody tr:hover {
+    background: rgba(255, 56, 68, 0.05);
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-action {
+    padding: 8px 16px;
+    border-radius: var(--radius-m);
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all var(--transition);
+}
+
+.btn-approve {
+    background: rgba(38, 85, 53, 0.3);
+    color: rgb(38 85 53);
+}
+
+.btn-approve:hover {
+    background: rgba(38, 85, 53, 0.5);
+    color: rgb(38 85 53);
+}
+
+.btn-reject {
+    background: rgba(255, 56, 68, 0.2);
+    color: var(--brand-primary);
+}
+
+.btn-reject:hover {
+    background: rgba(255, 56, 68, 0.4);
+    color: var(--brand-primary);
+}
+
+.btn-send {
+    background-image: linear-gradient(99deg, var(--brand-primary) 1.64%, var(--brand-primary-darker));
+    color: var(--white);
+}
+
+.btn-send:hover {
+    background-image: linear-gradient(99deg, var(--brand-primary-dark), var(--brand-primary-dark));
+}
+
+.btn-send:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Статусы вопросов */
+.status-badge {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: var(--radius-s);
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-pending {
+    background: rgba(255, 56, 68, 0.2);
+    color: var(--brand-primary);
+}
+
+.status-processed {
+    background: rgba(38, 85, 53, 0.3);
+    color: rgb(38 85 53);
+}
+
+/* Поле ответа */
+.answer-input {
+    width: 280px;
+    min-height: 60px;
+    padding: 12px 16px;
+    background: var(--violet);
+    border-radius: var(--radius-m);
+    color: var(--white);
+    font-family: 'Manrope Regular', sans-serif;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    resize: vertical;
+}
+
+.answer-input:focus {
+    border-color: var(--brand-primary);
+}
+
+.answer-input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+        

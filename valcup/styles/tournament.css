@@ -1,0 +1,220 @@
+.main {
+	padding: 150px 250px 160px 250px;
+}
+
+.head {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	align-items: center;
+	gap: 35px;
+	margin-bottom: 40px;
+}
+
+.body {
+	display: grid;
+	grid-template-columns: 1fr 412px;
+	gap: 96px 20px;
+}
+
+.backlight {
+	position: relative;
+    height: 434px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		border-radius: 100%;
+		inset: 115px 75px;
+		margin: auto;
+		background-color: var(--brand-primary);
+		filter: blur(148px);
+		z-index: -1;
+	}
+}
+
+.banner {
+	max-width: 100%;
+	aspect-ratio: 988 / 434;
+	object-fit: cover;
+}
+
+.info2 {
+	display: grid;
+	grid-template-rows: 1fr auto;
+	gap: 0px !important;
+}
+
+.info-top {
+	display: grid;
+	grid-template-columns: 1fr 124px;
+	gap: 20px;
+	align-content: start;
+}
+
+.info-bottom {
+	display: grid;
+	gap: 14px;
+}
+
+.info-item2 {
+	display: flex;
+    width: 124px;
+    height: 66px !important;
+	justify-content: center;
+	background-color: var(--violet);
+	border-radius: var(--radius-l);
+    height: 33px;
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.info-item-long {
+	padding-left: 40px !important;
+    background-color: var(--violet);
+    width: 268px;
+    height: 66px !important;
+	gap: 14px;
+	justify-content: start;
+}
+
+.info-item-icon {
+	color: var(--brand-primary);
+}
+
+.menu-button {
+    margin-top: -5px;
+}
+
+.status {
+	padding: 22px 0;
+	display: flex;
+	justify-content: center;
+	grid-column: span 2;
+	border-radius: var(--radius-l);
+    background-color: var(--green);
+}
+
+.info-item-long2 {
+	border-radius: 5px;
+	padding: 8px 129px;
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+    background-color: var(--violet);
+    width: 412px;
+    height: 39px !important;
+	gap: 14px;
+	justify-content: center;
+}
+
+.menu-button2 {
+	display: none;
+}
+
+.menu-button3 {
+	font-family: 'Gilroy-ExtraBold';
+    width: 412px;
+    height: 62px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background: #436994;
+    border-radius: 5px;
+}
+
+.status2 {
+	padding: 22px 0;
+	display: flex;
+	justify-content: center;
+	grid-column: span 2;
+	font-family: 'Gilroy-ExtraBold';
+	border: 1px solid transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+	background-image:
+		linear-gradient(var(--dark), var(--dark)),
+		linear-gradient(
+			to right,
+			rgb(from var(--dark) r g b / 0.3),
+			rgb(from var(--brand-primary) r g b / 0.3)
+		),
+		linear-gradient(var(--dark), var(--dark));
+
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+}
+
+.status-open {
+	background-color: var(--green);
+}
+
+.join {
+	margin-top: auto;
+	height: 62px;
+}
+
+.share-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-radius: 5px;
+}
+
+.text-heading-l2 {
+    font-family: var(--font-heading);
+	font-size: 2.25rem;
+	font-weight: 800;
+	line-height: normal;
+}
+
+
+.about {
+	padding: 40px;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+}
+
+.about-heading {
+	padding-bottom: 20px;
+}
+
+.about-organizer {
+	padding-top: 98px;
+}
+
+.about-organizer-title {
+	color: var(--brand-primary);
+}
+
+.tournament-bracket {
+	margin-top: 40px;
+	padding: 40px;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+}
+
+.bracket-heading {
+	padding-bottom: 40px;
+}
+
+.status-closed {
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background-image:
+		linear-gradient(to right, var(--dark), var(--dark)),
+		linear-gradient(to right, var(--dark), rgba(59, 18, 28, 1));
+	background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+	overflow: hidden;
+}
+
+.status-closed::before {
+	background: linear-gradient(45deg, var(--dark), var(--brand-primary));
+	border-radius: var(--radius-l);
+}

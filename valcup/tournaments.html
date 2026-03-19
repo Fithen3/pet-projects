@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValCup</title>
+    <link rel="stylesheet" href="./styles/tournaments.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/closedcodemodal.css">
+    <link rel="stylesheet" href="./styles/createtournament.css">
+</head>
+<body>
+    <header class="header">
+		<div class="content-header">
+			<nav class="nav">
+                <a href="./index.html" class="link link-home" title="FAQ">
+                    <div class="site-brand"><img class="icon-logo1" src="./images/valcup-logo.svg" alt="ValCup logo" width="34" height="72"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                </a>
+                <a class="link link-active text-heading-s" href="./tournaments.html" title="Турниры">
+                    <span class="link-content">ТУРНИРЫ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div></a>
+                <a class="link text-heading-s" href="./faq.html" title="FAQ">
+                    <span class="link-content">FAQ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div>
+                </a>
+			</nav>
+			<button class="profile"><a href="./profile.html">kkwoqq</a></button>
+		</div>
+	</header>
+
+
+    <main class="container main">
+		<h1 class="text-heading-l main-heading">Расписание турниров</h1>
+		<div class="content">
+			<section class="menu">
+                <div class="filter-container">
+                    <p class="text-heading-m filter-title">Фильтры</p>
+                    <div class="divider"></div>
+                    <menu class="filters">
+                        <button class="filter" data-filter="date">По дате</button>
+                        <button class="tonal2" data-filter="popular">Популярные</button>
+                        <button class="tonal2" data-filter="1x1">1x1</button>
+                        <button class="tonal2" data-filter="5x5">5x5</button>
+                        <button class="tonal2" data-filter="my">Ваши турниры</button>
+                        <button class="tonal2" data-filter="prize-asc">По возрастанию призовых</button>
+                        <button class="tonal2" data-filter="prize-desc">По убыванию призовых</button>
+                    </menu>
+                </div>
+				<button id="createtournament" class="menu-button">Создать турнир</button>
+				<div class="TournamentCard">
+                    <div class="cardtop">
+                        <p class="badge">NEW</p>
+                        <div>
+                            <p class="text-base-m">19.03.2026</p>
+                            <p class="text-heading-m">Топовый турнир</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info text-heading-s">
+                            <p class="info-item">2x2</p>
+                            <p class="info-item">50 т. ₽</p>
+                            <p class="info-item">28/32</p>
+                        </div>
+                        <img class="imagetop" src="./images/topbanner.png"/>
+                        <a href="./tournamenttop.html"><button class="tonal">Принять участие</button></a>
+                    </div>
+                </div>
+			</section>
+
+
+			<section class="tournaments-surface tournaments-popular">
+				<h2 class="text-heading-m date-title">29.03</h2>
+                <div class="divider2"></div>
+				<ul class="tournaments-list">
+					<li>
+
+                        <div class="privatetournament">
+                            <div class="head">
+                                <img class="tournamentlogo" src="./images/cardimg1.png"/>
+                                <p class="close">Закрытый турнир</p>
+                            </div>
+                            <div class="bodytournamentcard">
+                                <img src="./images/lock.png" class="lock"/>
+                            <div class="entry">
+                                <p class="text-heading-s">Турнир от 4uilive</p>
+                                <p class="details text-base-m">набор открыт</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Дата проведения:</p>
+                                <p class="details text-base-m">
+                                    29.03.2026 в 16:00
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Формат турнира:</p>
+                                <p class="details text-base-m">5V5</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Участники:</p>
+                                <p class="details text-base-m">
+                                    32/64
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Призовые:</p>
+                                <p class="details text-base-m">30 тыс. ₽</p>
+                            </div>
+                            <button class="totournament">
+                                <a href="./tournamentclosed.html"><img src="./images/arrow.png" alt=""></a>
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="cardtournament">
+                            <div class="head">
+                                <img class="tournamentlogo" src="./images/cardimg1.png"/>
+                            </div>
+                            <div class="bodytournamentcard">
+                            <div class="entry">
+                                <p class="text-heading-s">Тестовый турнир5</p>
+                                <p class="details text-base-m">набор открыт</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Дата проведения:</p>
+                                <p class="details text-base-m">
+                                    29.03.2026 в 20:00
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Формат турнира:</p>
+                                <p class="details text-base-m">1V1</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Участники:</p>
+                                <p class="details text-base-m">
+                                    32/32
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Призовые:</p>
+                                <p class="details text-base-m">20 тыс. ₽</p>
+                            </div>
+                            <button class="totournament">
+                                <a href="./tournamentfull.html"><img src="./images/arrow.png" alt=""></a>
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="cardtournament">
+                            <div class="head">
+                                <img class="tournamentlogo" src="./images/cardimg1.png"/>
+                            </div>
+                            <div class="bodytournamentcard">
+                            <div class="entry">
+                                <p class="text-heading-s">Тестовый турнир5</p>
+                                <p class="details text-base-m">набор открыт</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Дата проведения:</p>
+                                <p class="details text-base-m">
+                                    29.03.2026 в 20:00
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Формат турнира:</p>
+                                <p class="details text-base-m">1V1</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Участники:</p>
+                                <p class="details text-base-m">
+                                    32/32
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Призовые:</p>
+                                <p class="details text-base-m">20 тыс. ₽</p>
+                            </div>
+                            <button class="totournament">
+                                <img src="./images/arrow.png" alt="">
+                            </button>
+                            </div>
+                        </div>
+						
+					</li>
+				</ul>
+			</section>
+
+
+            <section></section>
+
+
+
+            <section class="tournaments-surface tournaments-schedule">
+				<h2 class="text-heading-m date-title">31.03</h2>
+                <div class="divider2"></div>
+				<div class="tournaments-by-date">
+					<ul class="tournaments-list">
+						<li>
+							<div class="cardtournament">
+                            <div class="head">
+                                <img class="tournamentlogo" src="./images/cardimg2.png"/>
+                            </div>
+                            <div class="bodytournamentcard">
+                            <div class="entry">
+                                <p class="text-heading-s">Тестовый турнир1</p>
+                                <p class="details text-base-m">набор открыт</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Дата проведения:</p>
+                                <p class="details text-base-m">
+                                    31.03.2026 в 19:00
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Формат турнира:</p>
+                                <p class="details text-base-m">4V4</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Участники:</p>
+                                <p class="details text-base-m">
+                                    16/32
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Призовые:</p>
+                                <p class="details text-base-m">16 тыс. ₽</p>
+                            </div>
+                            <button class="totournament">
+                                <img src="./images/arrow.png" alt="">
+                            </button>
+                            </div>
+                        </div>
+                        
+                        <div class="privatetournament">
+                            <div class="head">
+                                <img class="tournamentlogo" src="./images/cardimg1.png"/>
+                                <p class="close">Закрытый турнир</p>
+                            </div>
+                            <div class="bodytournamentcard">
+                                <img src="./images/lock.png" class="lock"/>
+                            <div class="entry">
+                                <p class="text-heading-s">Тестовый турнир4</p>
+                                <p class="details text-base-m">набор открыт</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Дата проведения:</p>
+                                <p class="details text-base-m">
+                                    31.03.2026 в 16:00
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Формат турнира:</p>
+                                <p class="details text-base-m">5V5</p>
+                            </div>
+                            <div class="entry">
+                                <p class="text-heading-s">Участники:</p>
+                                <p class="details text-base-m">
+                                    24/32
+                                </p>
+                            </div>
+                            <div class="entry borderless">
+                                <p class="text-heading-s">Призовые:</p>
+                                <p class="details text-base-m">30 тыс. ₽</p>
+                            </div>
+                            <button class="totournament">
+                                <img src="./images/arrow.png" alt="">
+                            </button>
+                            </div>
+                        </div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+            <section></section>
+
+            <section class="pagination-container">
+                <a class="pagination-item active2" href="">1</a>
+                <a class="pagination-item deactive2" href="">2</a>
+                <a class="pagination-item deactive2" href="">3</a>
+                <a class="pagination-item deactive2" href="">4</a>
+                <a class="pagination-item deactive2" href="">5</a>
+                <a class="pagination-item deactive2" href=""><img src="./images/paginationarrow.png" alt=""></a>
+            </section>
+
+		</div>
+	</main>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="brand">
+                    <a href="./index.html" class="" title="">
+                        <div class="site-brand"><img class="icon-logo" src="./images/valcup-logo.svg" alt="ValCup logo"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                    </a>
+                    <div class="socials">
+                        <img src="./images/vk.png" class="icon">
+                        <img src="./images/tg.png" class="icon">
+                    </div>
+                    <p class="copyright text-base-m">©Valcup Все права защищены</p>
+                </div>
+                <div class="links">
+                    <a href="./index.html" class="text-base-m">Главная</a>
+                    <a href="./tournaments.html" class="text-base-m">Турниры</a>
+                    <a href="./faq.html" class="text-base-m">FAQ</a>
+                </div>
+                <div class="support">
+                    <h3 class="support-heading text-heading-s">Служба поддержки</h3>
+                    <p class="support-description text-base-m">
+                        Мы всегда готовы вам помочь. Наши операторы онлайн 24/7
+                    </p>
+                    <button id="openModalBtn" class="menu-button footer-btn">Написать в чат</button>
+                </div>
+            </div>
+        </footer>
+
+
+
+<div id="tournamentCreateModal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Создать турнир</h2>
+                <p class="modal-description">Заполните форму для создания нового турнира</p>
+            </div>
+            
+            <form class="tournamentCreateForm" id="tournamentCreateForm">
+                <div class="form-fields">
+                    <!-- Название турнира -->
+                    <div class="form-row">
+                        <label class="form-label" for="tName">Название</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="tName" class="form-input" placeholder="Введите название турнира" required>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Формат турнира -->
+                    <div class="form-row">
+                        <label class="form-label" for="tFormat">Формат</label>
+                        <div class="input-wrapper">
+                            <select id="tFormat" class="form-input" required>
+                                <option value="">Выберите формат</option>
+                                <option value="1v1">1x1</option>
+                                <option value="2v2">2x2</option>
+                                <option value="4v4">4x4</option>
+                                <option value="5v5">5x5</option>
+                            </select>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-fields">
+                    <!-- Дата проведения -->
+                    <div class="form-row">
+                        <label class="form-label" for="tDate">Дата проведения</label>
+                        <div class="input-wrapper">
+                            <input type="datetime-local" id="tDate" class="form-input" required>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Максимум участников -->
+                    <div class="form-row">
+                        <label class="form-label" for="tMaxPlayers">Участники</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="tMaxPlayers" class="form-input" placeholder="32" min="2" max="64" required>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-fields">
+                    <!-- Призовой фонд -->
+                    <div class="form-row">
+                        <label class="form-label" for="tPrize">Призовой фонд</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="tPrize" class="form-input" placeholder="10000" min="0" required>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Тип турнира -->
+                    <div class="form-row">
+                        <label class="form-label" for="tType">Тип турнира</label>
+                        <div class="input-wrapper">
+                            <select id="tType" class="form-input" required>
+                                <option value="open">Открытый</option>
+                                <option value="closed">Закрытый</option>
+                            </select>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                    <!-- Описание -->
+                    <div class="form-row textrules">
+                        <label class="form-label" for="tDesc" style="margin-bottom: 12px;">Описание</label>
+                        <div class="input-wrapper" style="width: 100%;">
+                            <textarea id="tDesc" class="form-input" placeholder="Опишите правила и условия" rows="4" style="resize: vertical;"></textarea>
+                            <span class="error-message participant-error"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Кнопки -->
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="tournamentModalCancel">Отмена</button>
+                    <button type="submit" class="btn-primary" id="tournamentModalSubmit">Создать турнир</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container" id="modalWindow">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Форма обратной связи</h2>
+              <p class="modal-description">
+                В этом окне вы можете написать свой текст или вопрос<br>
+                Ответ появится в вашем профиле или на указанной вами почте
+              </p>
+            </div>
+
+            <div class="form-fields">
+            <!-- Team Name -->
+              <div class="form-row">
+                <label class="form-label">Ваш email (если вы не зарегистрированны)</label>
+                <div class="input-wrapper">
+                    <input class="form-input" type="email" placeholder="Ваш email">
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label">Ваше сообщение</label>
+                <div class="input-wrapper">
+                    <textarea class="form-input" placeholder="Ваше сообщение"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="closeModalBtn">Закрыть</button>
+                <button type="button" class="btn-primary" id="submitModalBtn">Отправить</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./scripts/modalchat.js"></script>
+<script src="./scripts/createtournament.js"></script>
+
+
+</html>

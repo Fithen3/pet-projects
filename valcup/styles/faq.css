@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--white);
+}
+
+.faq {
+	max-width: 1420px;
+	margin: 0 auto;
+	margin-bottom: 160px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.container {
+	max-width: 1420px;
+	background: linear-gradient(65deg, #12101f, #1c1a2f);
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.faq-title-main {
+	margin-top: 77px;
+	text-align: left;
+	font-size: 36px;
+    font-weight: bold;
+	font-family: 'Gilroy-ExtraBold';
+}
+
+.form-question {
+	max-width: 1420px;
+	display: flex;
+	gap: 40px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	font-weight: 700;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.faq-container {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.sidebar {
+	flex: 0 0 372px;
+	position: relative;
+}
+
+.sidebar-title {
+	font-size: 36px;
+    font-weight: 600;
+	margin-bottom: 1rem;
+	color: var(--white);
+	font-family: 'Gilroy-ExtraBold';
+}
+
+.sidebar-text {
+	color: var(--lavender);
+	margin-bottom: 1.5rem;
+	font-size: 18px;
+	font-family: 'Manrope Regular';
+}
+
+.disclaimer {
+	font-size: 0.8rem;
+	color: var(--white);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: 'Manrope Regular';
+}
+
+.faq-list {
+	flex: 1;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.faq-item {
+	background: #28223f;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.faq-question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	cursor: pointer;
+	position: relative;
+	background: linear-gradient(
+		60deg,
+		rgba(10, 9, 17, 0.2) 0%,
+		rgba(10, 9, 17, 0.2) 70%,
+		rgba(255, 56, 68, 0.1) 100%
+	);
+}
+
+.faq-question-text {
+	font-size: 1.05rem;
+	font-weight: 500;
+	flex-grow: 1;
+	margin-right: 1rem;
+	max-width: 700px;
+	font-family: 'Gilroy-ExtraBold';
+	color: var(--white);
+}
+
+.faq-answer {
+	padding: 0 40px;
+	max-height: 0;
+	overflow: hidden;
+	transition:
+		max-height 0.3s ease,
+		padding 0.3s ease;
+	background-color: #28223f;
+}
+
+.faq-answer-content {
+	padding: 1.2rem 0;
+    font-family: 'Manrope Regular';
+	color: var(--lavender);
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.faq-answer::before {
+	content: '';
+	display: block;
+	height: 1px;
+	background: linear-gradient(to right, transparent, var(--brand-primary), transparent);
+	margin: 0rem 0;
+}
+
+.faq-toggle {
+	width: 51px;
+	height: 30px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s ease;
+	background:
+		linear-gradient(#28223f, #28223f) padding-box,
+		linear-gradient(80deg, rgba(10, 9, 17, 0.2), rgba(255, 56, 68, 0.2)) border-box;
+	border: 2px solid transparent;
+}
+
+.faq-toggle-img {
+	transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle-img {
+	transform: rotate(90deg);
+	filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(2048%) hue-rotate(321deg)
+		brightness(102%) contrast(101%);
+}
+
+.faq-item.active .faq-answer {
+	max-height: 500px;
+	padding: 0rem 40px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+form textarea {
+	background: var(--violet);
+	border: none;
+	min-width: 628px;
+	min-height: 132px;
+	resize: none;
+	border-radius: 10px;
+	padding: 10px 10px;
+	color: #ffffff;
+	font-family: 'Gilroy-ExtraBold';
+    font-size: 18px;
+}
+
+form textarea::placeholder {
+	color: #e2e2e2;
+}
+
+form textarea:focus {
+	border: none;
+	outline: none;
+}
+
+form button {
+	width: 372px;
+	height: 50px;
+	background: linear-gradient(83deg, #ff3844, #992229);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	color: var(--text-primary);
+	align-self: end;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 18px;
+}
+
+.qr {
+	padding: 40px;
+	max-width: 280px;
+	max-height: 280px;
+	background: linear-gradient(40deg, #12101f, #1c1a2f);
+	border-radius: 10px;
+}
+
+.qr img {
+	width: 200px;
+	height: 200px;
+}

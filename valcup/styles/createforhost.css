@@ -1,0 +1,139 @@
+.main {
+    padding: 172px 0px 0px 250px;
+    margin-bottom: 220px;
+}
+
+.create-info {
+    width: 1132px;
+    padding: 40px;
+    margin-bottom: 20px;
+	position: relative;
+    background-color: #12101F;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+    overflow: hidden;
+	isolation: isolate;
+}
+
+.create-info::before {
+		content: '';
+		position: absolute;
+		width: 336px;
+		height: 303px;
+		top: -134px;
+		right: -216px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+	.create-info:after {
+		content: '';
+		position: absolute;
+		width: 268px;
+		height: 241px;
+		bottom: -135px;
+		left: -133px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+
+.codeform {
+    margin-top: 93px;
+}
+
+.codeform-content {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.gradient-input {
+            background-color: #28223F; /* Внутренний цвет */
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-family: 'Gilroy-ExtraBold';
+            width: 549px;
+            height: 53px;
+            outline: none;
+            position: relative;
+            /* Используем background-origin чтобы градиент был только в рамке */
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            background-image: 
+                linear-gradient(to bottom, #28223F, #28223F), /* Внутренний слой - цвет фона */
+                linear-gradient(to bottom, rgb(10 9 17), rgb(255 56 68)); /* Внешний слой - градиент рамки */
+            border: 1px solid transparent;
+            /* Альтернативный вариант с двойным градиентом в border-image */
+        }
+
+.gradient-input::placeholder {
+    color: var(--white);
+}
+
+.menu-button {
+    width: 550px !important;
+    height: 50px !important;
+}
+
+.codeform-content a {
+    width: 550px !important;
+    height: 50px !important;
+}
+
+
+.create-text h1 {
+    color: var(--brand-primary);
+    margin-bottom: 21px;
+}
+
+.create-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.red {
+    color: #FF3844;
+}
+
+.create-text p {
+    color: white;
+    font-family: 'Manrope Light';
+    font-size: 18px;
+    max-width: 890px;
+    line-height: 1.5;
+}
+
+.btn-action {
+    width: 510px !important;
+    height: 50px !important;
+}
+
+.backlight {
+	position: relative;
+    width: 1132px;
+    height: 491px;
+    }
+
+	.backlight::after {
+		content: '';
+		position: absolute;
+		display: block;
+		border-radius: 100%;
+		inset: 115px 75px;
+		margin: auto;
+		background-color: var(--brand-primary);
+		filter: blur(148px);
+		z-index: -1;
+	}

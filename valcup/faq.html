@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValCup</title>
+    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/base.css">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/closedcodemodal.css">
+</head>
+<body>
+    <header class="header">
+		<div class="content-header">
+			<nav class="nav">
+                <a href="./index.html" class="link link-home" title="FAQ">
+                    <div class="site-brand"><img class="icon-logo1" src="./images/valcup-logo.svg" alt="ValCup logo" width="34" height="72"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                </a>
+                <a class="link text-heading-s" href="./tournaments.html" title="Турниры">
+                    <span class="link-content">ТУРНИРЫ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div></a>
+                <a class="link link-active text-heading-s" href="./faq.html" title="FAQ">
+                    <span class="link-content">FAQ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div>
+                </a>
+			</nav>
+			<button class="profile"><a href="./auth.html">ВОЙТИ</a></button>
+		</div>
+	</header>
+
+    <section class="faq">
+		<p class="faq-title-main">Часто задаваемые вопросы</p>
+		<div class="container">
+			<div class="faq-container">
+				<div class="sidebar">
+					<h2 class="sidebar-title">О турнирах</h2>
+					<p class="sidebar-text">
+						Ответы на вопросы связанные с организацией, проведением, участием в турнирах на сайте 
+					</p>
+					<p class="disclaimer">Данные ответы обобщены</p>
+				</div>
+
+				<div class="faq-list">
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Как формируется турнирная сетка?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Сетка формируется случайным образом из команд подавших заявку и прошедших модерацию. Она появляется в момент старта турнира (отслеживайте на странице турнира).
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Кто становятся хостом и какова его роль?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Хост лобби выбирается случайным образом между 2 капитанами. Задача хоста лобби за отведенное время создать лобби для матча по инструкции на экране.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Что делать, если команда противников специально задерживает этап голосования за победителя?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								При возникновении спорной ситуации решение принимает организатор турнира, его контакты вы можете узнать на странице турнира.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Как проходит матч?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Всем участникам матча на странице турнира отображается блок с надписью "Нашли противника". Задача участников нажать на кнопку "Присоединиться к игре". После этого они попадают в лобби, где они должны подтвердить готовность. Если за отведенное сайтом время команда не подтвердила свою готовность, то ей присваивается техническое поражение. После подтверждения готовности все участники матча переносятся на страницу с пиками и банами карт и сторон. Затем всех, кроме хоста, переносит на страницу ожидания. В это время хосту видна страница создания лобби с подробной инструкцией. После создания хостом лобби и ввода кода в специальное поле всех переносит на страницу матча. На ней участники находятся до завершения карты. После матча капитаны нажимают на кнопку "Матч окончен" и всех переносит на страницу с выбором победителя. Капитаны должны проголосовать за победителя. Если на этом моменте капитан одной из команд специально задерживает матч или голосует не за команду победителя, то будут применяться санкции организатором или администрацией сайта. После того, как оба капитана проголосовали за победителя всем игрокам выводится результат встречи. Если матч в формате best of 3 или best of 5, то после результата матча всех игроков переносит на окно ожидания, а хосту лобби выводится новая инструкция со второй картой. Далее цикл повторяется. После того, как команды сыграли все карты матча их переносит на страницу турнира, где они ожидают следующий матч.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="faq-container">
+				<div class="sidebar">
+					<h2 class="sidebar-title">О наградах</h2>
+					<p class="sidebar-text">
+						Вопросы на ответы связанные с наградами на сайте или турнирах
+					</p>
+					<p class="disclaimer">Данные ответы обобщены</p>
+				</div>
+
+				<div class="faq-list">
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Что означают иконки около ника в личном профиле?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Иконки выдаются сайтом за особые условия, например чтобы получить иконку твича обратитесь в поддержку сайта для подтверждения аккаунта.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								С другой стороны дальнейшее развитие различных форм деятельности в значительной
+								степени обуславливает создание систем массового участия?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Текст ответа на второй вопрос. Здесь можно разместить подробную информацию, которая
+								поможет пользователю понять суть вопроса и получить исчерпывающий ответ.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Таким образом дальнейшее развитие различных форм деятельности влечет?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								С другой стороны дальнейшее развитие различных форм деятельности в значительной
+								степени обуславливает создание систем массового участия. С другой стороны дальнейшее
+								развитие различных форм деятельности в значительной степени обуславливает создание
+								систем массового участия. С другой стороны дальнейшее развитие различных форм
+								деятельности в значительной степени обуславливает создание систем массового участия.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								С другой стороны дальнейшее развитие различных форм деятельности в значительной
+								степени обуславливает создание систем массового участия?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Текст ответа на второй вопрос. Здесь можно разместить подробную информацию, которая
+								поможет пользователю понять суть вопроса и получить исчерпывающий ответ.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="faq-container">
+				<div class="sidebar">
+					<h2 class="sidebar-title">О модерации</h2>
+					<p class="sidebar-text">
+						Ответы на вопросы связанные с действиями, условиями, этапами модерации на сайте
+					</p>
+					<p class="disclaimer">Данные ответы обобщены</p>
+				</div>
+
+				<div class="faq-list">
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Где узнать статус заявки команды?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Чтобы узнать статус вашей заявки вы должны перейти в свой профиль. В блоке "Текущие турниры" будет отображаться статус вашей заявки.
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Почему могут присвоить техническое поражение?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Техническое поражение присваивается когда команда не подтверждает свою готовность в лобби матча. Другой причиной технического поражение может быть решение организатора турнира.
+							</div>
+						</div>
+					</div>
+
+                    <div class="faq-item">
+						<div class="faq-question">
+							<span class="faq-question-text">
+								Таким образом рамки и место обучения кадров в значительной степени обуславливает
+								создание модели развития?
+							</span>
+							<div class="faq-toggle">
+								<img class="faq-toggle-img" src="./images/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="faq-answer">
+							<div class="faq-answer-content">
+								Текст ответа на первый вопрос. Здесь можно разместить подробную информацию, которая
+								поможет пользователю понять суть вопроса и получить исчерпывающий ответ.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-question">
+			<div class="container">
+				<div class="faq-container">
+					<div class="sidebar">
+						<h2 class="sidebar-title">Остались вопросы?</h2>
+						<p class="sidebar-text">
+							Служба поддержки ответит вам максимально быстро.
+						</p>
+					</div>
+					<form action="" method="post">
+						<textarea name="" id="" placeholder="Опишите свою проблему..."></textarea>
+						<button type="submit">Написать поддержке</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="qr">
+				<img src="./images/qr.png" alt="qr">
+			</div>
+		</div>
+	</section>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="brand">
+                    <a href="./index.html" class="" title="">
+                        <div class="site-brand"><img class="icon-logo" src="./images/valcup-logo.svg" alt="ValCup logo"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                    </a>
+                    <div class="socials">
+                        <img src="./images/vk.png" class="icon">
+                        <img src="./images/tg.png" class="icon">
+                    </div>
+                    <p class="copyright text-base-m">©Valcup Все права защищены</p>
+                </div>
+                <div class="links">
+                    <a href="./index.html" class="text-base-m">Главная</a>
+                    <a href="./tournaments.html" class="text-base-m">Турниры</a>
+                    <a href="./faq.html" class="text-base-m">FAQ</a>
+                </div>
+                <div class="support">
+                    <h3 class="support-heading text-heading-s">Служба поддержки</h3>
+                    <p class="support-description text-base-m">
+                        Мы всегда готовы вам помочь. Наши операторы онлайн 24/7
+                    </p>
+                    <button id="openModalBtn" class="menu-button footer-btn">Написать в чат</button>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+<div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container" id="modalWindow">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Форма обратной связи</h2>
+              <p class="modal-description">
+                В этом окне вы можете написать свой текст или вопрос<br>
+                Ответ появится в вашем профиле или на указанной вами почте
+              </p>
+            </div>
+
+            <div class="form-fields">
+            <!-- Team Name -->
+              <div class="form-row">
+                <label class="form-label">Ваш email (если вы не зарегистрированны)</label>
+                <div class="input-wrapper">
+                    <input class="form-input" type="email" placeholder="Ваш email">
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label">Ваше сообщение</label>
+                <div class="input-wrapper">
+                    <textarea class="form-input" placeholder="Ваше сообщение"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="closeModalBtn">Закрыть</button>
+                <button type="button" class="btn-primary" id="submitModalBtn">Отправить</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="./scripts/modalchat.js"></script>
+<script src="./scripts/faq.js"></script>
+</html>

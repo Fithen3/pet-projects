@@ -1,0 +1,207 @@
+.main {
+    padding: 80px 0px 0px 250px;
+    margin-bottom: 160px;
+}
+
+.winner-info {
+    width: 1420px;
+    padding: 40px;
+    margin-bottom: 20px;
+	position: relative;
+    background-color: #12101F;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+    overflow: hidden;
+	isolation: isolate;
+}
+
+.winner-info::before {
+		content: '';
+		position: absolute;
+		width: 336px;
+		height: 303px;
+		top: -134px;
+		right: -216px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+	.winner-info:after {
+		content: '';
+		position: absolute;
+		width: 268px;
+		height: 241px;
+		bottom: -135px;
+		left: -133px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+.team-title {
+    font-size: 36px;
+    height: 100%;
+    font-family: 'Gilroy-ExtraBold';
+    display: flex;           /* Включаем Flexbox */
+    align-items: center;     /* Выравнивание по вертикали */
+    justify-content: center;
+}
+
+
+.codeform {
+    margin-top: 93px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.codeform-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gradient-input {
+            background-color: #28223F; /* Внутренний цвет */
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-family: 'Gilroy-ExtraBold';
+            width: 549px;
+            height: 53px;
+            outline: none;
+            position: relative;
+            /* Используем background-origin чтобы градиент был только в рамке */
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            background-image: 
+                linear-gradient(to bottom, #28223F, #28223F), /* Внутренний слой - цвет фона */
+                linear-gradient(to bottom, rgb(10 9 17), rgb(255 56 68)); /* Внешний слой - градиент рамки */
+            border: 1px solid transparent;
+            /* Альтернативный вариант с двойным градиентом в border-image */
+        }
+
+.gradient-input::placeholder {
+    color: var(--white);
+}
+
+.menu-button {
+    width: 265px !important;
+    height: 44px !important;
+}
+
+.chosen {
+    background: var(--brand-primary-darker) !important;
+}
+
+.confirm {
+    width: 550px;
+    height: 44px;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-radius: 5px;
+}
+
+.codeform-content a {
+    width: 265px !important;
+    height: 44px !important;
+}
+
+
+.winner-text h1 {
+    color: var(--brand-primary);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.winner-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.red {
+    color: #FF3844;
+}
+
+.winner-text p {
+    color: white;
+    font-family: 'Manrope Light';
+    font-size: 18px;
+    width: 580px;
+    line-height: 1.5;
+}
+
+
+.info-item2 {
+	display: flex;
+    width: 134px !important;
+    height: 52px !important;
+    margin-top: 25px;
+	justify-content: center;
+	background-color: var(--violet);
+	border-radius: var(--radius-l);
+	font-family: 'Gilroy-ExtraBold' !important;
+	font-size: 18px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.teams img {
+    align-self: center;
+    width: 160px;
+    height: 160px;
+}
+
+.team {
+    width: 516px;
+    height: 236px;
+    background-image: url('../images/bgteam.png');
+}
+
+
+.btn-action {
+    width: 510px !important;
+    height: 50px !important;
+}
+
+.backlight {
+	position: relative;
+    width: 1420px;
+    height: 702px;
+    }
+
+	.backlight::after {
+		content: '';
+		position: absolute;
+		display: block;
+		border-radius: 100%;
+		inset: 115px 75px;
+		margin: auto;
+		background-color: var(--brand-primary);
+		filter: blur(148px);
+		z-index: -1;
+	}

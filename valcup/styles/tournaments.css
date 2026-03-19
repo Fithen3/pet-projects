@@ -1,0 +1,112 @@
+.main {
+	padding: 80px 0 160px 0;
+	display: grid;
+}
+
+
+.content {
+	display: grid;
+	grid-template-columns: 412px 1fr;
+	gap: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--screen-2xl);
+	margin-inline: auto;
+}
+
+.menu {
+	display: grid;
+	gap: 20px;
+	grid-template-rows: auto 62px auto;
+	place-content: start;
+	position: relative;
+}
+
+.filter-container {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(18, 16, 31, 1), rgba(28, 26, 47, 1));
+    border-radius: 10px;
+}
+
+.filter-title {
+    margin-bottom: 15px;
+}
+
+.filters {
+	display: flex;
+    margin-top: 15px;
+    max-width: 372px;
+	flex-wrap: wrap;
+	gap: 20px;
+	position: sticky;
+}
+
+.filter {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 18px;
+    color: white;
+    padding: 11px 20px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-radius: 5px;
+}
+
+.tournaments {
+	padding: 40px;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+}
+
+.tournaments-list {
+	display: grid;
+	gap: 20px;
+}
+
+.date-title {
+    margin-bottom: 15px;
+    width: 450px;
+    border-bottom: none;
+    display: block;
+    padding-bottom: 10px;
+    background: linear-gradient(to left, rgb(from var(--brand-primary) r g b / 0), var(--brand-primary-darker)) bottom / 100% 2px no-repeat;
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination-item {
+    width: 51px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Gilroy-ExtraBold';
+	font-size: 18px;
+}
+
+.active2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-radius: 5px;
+}
+
+.deactive2 {
+    border: 1px solid transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+	background-image:
+		linear-gradient(#28223F, #28223F),
+		linear-gradient(to right, rgb(from var(--dark) r g b / 0.3), rgb(from var(--brand-primary) r g b / 0.3)), 
+        linear-gradient(#28223F, #28223F);
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+}

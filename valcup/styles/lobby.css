@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* Main Dashboard */
+.main {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    flex: 1;
+}
+
+.lobby-info {
+    width: 1420px;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 50px rgba(255, 56, 68, 0.15);
+    position: relative;
+	background-image: var(--surface-dark-gradient);
+	border-radius: var(--radius-l);
+    overflow: hidden;
+	isolation: isolate;
+}
+
+.lobby-info::before {
+		content: '';
+		position: absolute;
+		width: 336px;
+		height: 303px;
+		top: -134px;
+		right: -216px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+	.lobby-info:after {
+		content: '';
+		position: absolute;
+		width: 268px;
+		height: 241px;
+		bottom: -135px;
+		left: -133px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+
+
+
+.lobby-header h1 {
+    color: var(--brand-primary);
+    margin-bottom: 10px;
+}
+
+.lobby-header p {
+    color: white;
+    font-family: 'Manrope Light';
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.lobby-grid {
+    display: grid;
+    grid-template-columns: 319px 319px 510px;
+    gap: 20px;
+}
+
+/* Teams */
+.team-column {
+    width: 319px;
+    position: relative;
+    padding: 20px;
+    background-color: var(--violet);
+	border-radius: var(--radius-l);
+    overflow: hidden;
+	isolation: isolate;
+}
+
+	.team-column:after {
+		content: '';
+		position: absolute;
+		width: 268px;
+		height: 241px;
+		bottom: -135px;
+		left: -133px;
+		border-radius: 100%;
+		background-color: var(--brand-primary);
+		opacity: 0.2;
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+.team-column h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.slot {
+    background-image:
+		linear-gradient(to right, rgba(18, 17, 31, 1), rgba(27, 26, 47, 1)),
+		linear-gradient(
+			to right,
+			rgb(from var(--dark) r g b / 0.3),
+			rgb(from var(--brand-primary) r g b / 0.3)
+		),
+		linear-gradient(to right, rgba(18, 17, 31, 1), rgba(27, 26, 47, 1));
+
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crown-icon {
+    margin-bottom: -5px;
+}
+
+/* Info Column (Right) */
+
+.info-column {
+    margin-top: -137px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 152px;
+}
+
+
+.map-card {
+    width: 510px;
+    height: 287px;
+    background-color: #2a2a3d; /* Placeholder color */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 12px;
+}
+
+
+.btn-action {
+    width: 510px !important;
+    height: 50px !important;
+}
+
+/* Badges on Map */
+.badge {
+    position: absolute;
+    background: rgba(13, 13, 21, 0.8);
+    color: white;
+    font-weight: bold;
+    backdrop-filter: blur(4px);
+}
+
+.badge-round {
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.badge-rect {
+    top: 50px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: rgba(40, 40, 60, 0.9);
+}
+
+/* Code Card */
+.code-card {
+    width: 510px;
+    height: 114px;
+    background-color: var(--violet);
+    border-radius: 12px;
+    padding: 20px 20px 20px 188px;
+    display: flex;
+    gap: 99px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.code-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-info .label {
+    font-size: 18px;
+    font-family: 'Manrope Light';
+    color: #ffffff;
+}
+
+.code-info .code-value {
+    font-size: 36px;
+    font-family: 'Gilroy-ExtraBold';
+    color: var(--brand-primary);
+    letter-spacing: 1px;
+    
+}
+
+.copy-btn {
+    background: linear-gradient(91deg, #231D3B, #12101F);
+    border: none;
+    color: white;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copy-btn:hover { background: #35354a; }
+
+/* Chat Section */
+.chat-section {
+    background-color: rgba(10, 9, 17, 0.9);
+    border: 1px solid #1e1e2b;
+    border-radius: 12px;
+    padding: 20px;
+    background-image:
+		linear-gradient(to right, rgba(10, 9, 17, 0.9), rgba(10, 9, 17, 0.9)),
+		linear-gradient(
+			to right,
+			rgb(from var(--brand-primary) r g b / 0.2),
+			rgb(from var(--brand-primary) r g b / 0.09)
+		),
+		linear-gradient(to right, rgba(10, 9, 17, 0.9), rgba(10, 9, 17, 0.9));
+
+	background-origin: padding-box, border-box, border-box;
+	background-clip: padding-box, border-box, border-box;
+    border: 1px solid transparent;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    max-width: 100%;
+    background: linear-gradient(to right, rgba(30, 30, 53, 0.2), rgba(89, 89, 155, 0.2));
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.message .msg-header {
+    font-family: 'Manrope Light';
+    font-size: 11px;
+    margin-bottom: 4px;
+}   
+
+.message.received .msg-header { 
+    color: var(--brand-primary); 
+}
+.message.sent { 
+    align-self: flex-end; 
+    text-align: left; 
+}
+.message.sent .msg-header { 
+    color: var(--brand-primary); 
+}
+
+.msg-content {
+    max-width: 1240px;
+    line-height: 1.4;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Manrope Light';
+    margin-top: 5px;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+    color: white;
+    background: linear-gradient(to right, rgba(30, 30, 53, 0.2), rgba(89, 89, 155, 0.2));
+}
+
+#chatInput {
+    flex: 1;
+    background-color: transparent;
+    resize: none;
+    white-space: normal;
+    word-wrap: break-word;
+    height: 55px;
+    font-size: 15px;
+    font-family: 'Manrope Light';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+#chatInput:focus { 
+    border-color: #e54d50; 
+}
+
+#chatInput::placeholder {
+    color: white;
+}
+
+.send-btn {
+    background: linear-gradient(135deg, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 16.5px 20px 16.5px 0px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}

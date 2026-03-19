@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0A0911;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Header / Logo ── */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.domain {
+  font-size: 36px !important;
+}
+
+.logo img {
+  width: 34px !important;
+  height: 73px !important;
+}
+
+
+/* ── Card ── */
+.card {
+  width: 844px;
+  border: 1px solid transparent;
+	background-image:
+		linear-gradient(to top left, rgb(6 5 10 / 0.95), rgb(6 5 10 / 0.95)),
+		linear-gradient(to top left, var(--dark), var(--brand-primary));
+
+	background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.backlight {
+	position: relative;
+    height: 490px;
+    }
+
+	.backlight::after {
+		content: '';
+		position: absolute;
+		display: block;
+		border-radius: 100%;
+		inset: 115px 75px;
+		margin: auto;
+		background-color: var(--brand-primary);
+		filter: blur(148px);
+		z-index: -1;
+	}
+
+.card-title {
+  text-align: center;
+  font-size: 36px;
+  color: #CC2D36;
+  font-family: 'Gilroy-ExtraBold';
+  margin-bottom: 40px;
+}
+
+/* ── Form ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 18px;
+  padding: 16px 20px;
+  border: 1px solid transparent;
+  background-image:
+	  linear-gradient(to left,rgba(27, 26, 47, 1), rgba(18, 17, 31, 1)),
+	  linear-gradient(to right, rgba(37, 25, 42, 1), rgba(67, 25, 44, 1));
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder {
+  color: var(--white);
+}
+
+.input:focus {
+  border-color: rgba(230, 57, 70, 0.5);
+}
+
+/* ── Button ── */
+.btn-primary {
+  display: flex;
+  width: 228px;
+  height: 42px;
+  background: linear-gradient(to right, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+  color: var(--white);
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 18px;
+  transition: background 0.2s ease;
+  border-radius: 5px;
+  margin-left: 268px;
+  margin-top: 40px;
+}
+
+.btn-primary a {
+  width: 228px;
+  height: 42px;
+  text-align: center;
+  padding-top: 9.5px;
+}
+
+/* ── Links ── */
+.links {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  gap: 5px !important;
+}
+
+.links a {
+  font-family: 'Manrope Regular';
+  color: #6b7080;
+  font-size: 16px;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #e63946;
+}
+
+/* ── Footer ── */
+.copyright {
+  font-family: 'Manrope Light' !important;
+  background-color: transparent;
+  margin-top: 125px;
+}
+
+
+    /* ── Checkbox (New) ── */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: rgba(27, 26, 47, 1);
+    border: 1px solid var(--text-gray);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+    background: linear-gradient(to right, rgba(255, 56, 68, 1), rgba(153, 34, 41, 1));
+    border-color: transparent;
+}
+
+.checkbox-custom::after {
+    content: '✔';
+    color: #ffffff;
+    font-size: 12px;
+    display: none;
+    margin-top: -2px;
+    font-weight: bold;
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+    display: block;
+}
+
+.checkbox-label {
+    font-family: 'Manrope Regular', sans-serif;
+    color: var(--text-gray);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.checkbox-label a {
+    color: #e63946;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.checkbox-label a:hover {
+    color: #ffffff;
+}

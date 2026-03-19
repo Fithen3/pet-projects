@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valcup</title>
+    <link rel="stylesheet" href="./styles/lobby.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+		<div class="content-header">
+			<nav class="nav">
+                <a href="./index.html" class="link link-home" title="FAQ">
+                    <div class="site-brand"><img class="icon-logo1" src="./images/valcup-logo.svg" alt="ValCup logo" width="34" height="72"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                </a>
+                <a class="link text-heading-s" href="./tournaments.html" title="Турниры">
+                    <span class="link-content">ТУРНИРЫ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div></a>
+                <a class="link text-heading-s" href="./faq.html" title="FAQ">
+                    <span class="link-content">FAQ</span>
+                    <div class="glow"></div>
+                    <div class="decoration decoration-outlined"></div>
+                </a>
+			</nav>
+			<button class="profile"><a href="./profile.html">kkwoqq</a></button>
+		</div>
+	</header>
+
+    
+    <main class="main container">
+        
+        
+        <section class="lobby-info">
+            <div class="lobby-header">
+                <h1 class="text-heading-l">Турнир «Кожа убийцы»</h1>
+                <p>Таким образом рамки и место обучения кадров в значительной степени обуславливает создание модели развития.</p>
+            </div>
+
+            <div class="lobby-grid">
+                
+                <div class="team-column">
+                    <h3>Команда А</h3>
+                    <div class="slot host">
+                        <span>Капитан хост</span>
+                        <span class="crown-icon"><img src="./images/host.png" alt=""></span>
+                    </div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                </div>
+
+                
+                <div class="team-column">
+                    <h3>Команда Б</h3>
+                    <div class="slot host">
+                        <span>Капитан</span>
+                    </div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                    <div class="slot">Ник</div>
+                </div>
+
+                
+                <div class="info-column">
+                    
+                    <div class="map-card placeholder-img">
+                        <img src="./images/map.png" alt="">
+                    </div>
+
+                    
+                    <div class="code-card">
+                        <div class="code-info">
+                            <span class="label">Код группы</span>
+                            <span class="code-value" id="groupCode">UBQ203</span>
+                        </div>
+                        <button class="copy-btn" onclick="copyCode()"><img src="./images/copy.png" alt=""></button>
+                    </div>
+
+                    <a href="./winnerchose.html"><button class="menu-button btn-action">Матч окончен</button></a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="chat-section">
+            <div class="chat-window" id="chatWindow">
+                <div class="message received">
+                    <div class="msg-header">НИК</div>
+                    <div class="divider"></div>
+                    <div class="msg-content">
+                        Рады приветствовать вас на valcup.pro. У вас появились вопросы? Рады приветствовать вас на valcup.pro. У вас появились вопросы? Рады приветствовать вас на valcup.pro. У вас появились вопросы? Рады приветствовать вас на valcup.pro. У вас появились вопросы?
+                    </div>
+                </div>
+
+                <!-- Message Sent (Self) -->
+                <div class="message sent">
+                    <div class="msg-header">НИК</div>
+                    <div class="divider"></div>
+                    <div class="msg-content">
+                        Почему не работает сетка?
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea type="text" id="chatInput" placeholder="Ваше сообщение..."></textarea>
+                <button class="send-btn" onclick="sendMessage()"><img src="./images/arrowchat.png" alt=""></button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+            <div class="footer-container">
+                <div class="brand">
+                    <a href="./index.html" class="" title="">
+                        <div class="site-brand"><img class="icon-logo" src="./images/valcup-logo.svg" alt="ValCup logo"><p class="domain">valcup.<span class="suffix">pro</span></p></div>
+                    </a>
+                    <div class="socials">
+                        <img src="./images/vk.png" class="icon">
+                        <img src="./images/tg.png" class="icon">
+                    </div>
+                    <p class="copyright text-base-m">©Valcup Все права защищены</p>
+                </div>
+                <div class="links">
+                    <a href="./index.html" class="text-base-m">Главная</a>
+                    <a href="./tournaments.html" class="text-base-m">Турниры</a>
+                    <a href="./faq.html" class="text-base-m">FAQ</a>
+                </div>
+                <div class="support">
+                    <h3 class="support-heading text-heading-s">Служба поддержки</h3>
+                    <p class="support-description text-base-m">
+                        Мы всегда готовы вам помочь. Наши операторы онлайн 24/7
+                    </p>
+                    <button id="openModalBtn" class="menu-button footer-btn">Написать в чат</button>
+                </div>
+            </div>
+        </footer>
+
+    <script src="./scripts/lobby.js"></script>
+</body>
+</html>
